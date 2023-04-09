@@ -1,0 +1,156 @@
+.pink{
+		
+			background-color:pink;
+			
+		}
+		
+		.white{
+			
+			background-color:white;
+		
+		}
+		
+		.gray{
+		
+			background-color:gray;
+		}
+		
+		.main{
+		
+			display:flex;
+		
+		}
+		
+		
+		.keyboard1{
+			
+			width:1080px;
+			height:350px;
+			border-radius:4px;        
+			border:2px solid black;
+			
+		}
+		
+		.keyboard2{
+		
+			width:300px;
+			height:350px;
+			margin-left:40px;
+			border-radius:4px; 
+			border:2px solid black;
+		}
+		
+		.button{
+			display:flex;
+			
+		}
+		
+		.key{
+			
+			
+			
+			margin:9px 12px 5px 10px;
+			border:2px solid black;
+			text-align:center;
+			font-size:15px;
+			border-radius:4px;
+			padding:15px 23px 1px 15px;
+			
+		}
+		.keylast{
+			width:120px;
+			height:33px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			text-align:center;
+			font-size:23px;
+			padding:10px;
+			border-radius:4px;
+		}
+		.last{
+			width:110px;
+			height:33px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			border-radius:4px;
+			padding:10px;
+			font-size:15px;
+			text-align:center;
+		}
+		.lasts{
+			width:130px;
+			height:33px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			border-radius:4px;
+			padding:10px;
+		}
+		.keys{
+			width:150px;
+			height:33px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			border-radius:4px;
+			padding:10px;
+		}
+		.single{
+			padding:20px 20px 15px 20px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			border-radius:4px;
+			font-size:15px;
+			
+			text-align:center;
+		}
+		.spacebar{
+			width:360px;
+			height:33px;
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			padding:10px;
+			border-radius:4px;
+		
+		}
+		.button1{
+			display:flex;
+		}
+		.blank{
+		
+			margin:5px 12px 5px 10px;
+			border:2px solid black;
+			text-align:center;
+			font-size:15px;
+			border-radius:4px;
+			padding:19px 20px 19px 20px;
+		}
+		
+		.blanks{
+		 	
+		 	margin:3px 6px 5px 10px;
+			border:2px solid black;
+			text-align:center;
+			font-size:15px;
+			border-radius:4px;
+			padding:55px 21px 53px 21px;
+			margin-right:1px;
+		}
+		.singles
+		{
+			padding:25px 27px 25px 23px;
+			margin:4px 6px 5px 15px;
+			border:2px solid black;
+			border-radius:4px;
+		}
+		.box1{
+			display:flex;
+		}
+		.lastblank{
+		
+			margin:3px 6px 5px 5px;
+			border:2px solid black;
+			text-align:center;
+			font-size:15px;
+			border-radius:4px;
+			padding:55px 21px 53px 21px;
+			margin-right:1px;
+		}

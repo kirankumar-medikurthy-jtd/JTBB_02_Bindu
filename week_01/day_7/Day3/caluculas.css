@@ -1,0 +1,44 @@
+.green{
+	background-color:green;
+}
+.container{
+	width:450px;
+	padding:20px 10px;	
+}
+
+.displayer{
+	display:flex;
+}
+
+.yellow{
+	background-color:yellow;
+
+}
+.output{
+	padding:40px;
+	margin: 0px 15px
+}
+
+.white{
+	background-color:white;
+}
+
+.red{
+	background-color:red;
+	
+}
+.pink{
+	background-color:pink;
+}
+
+.number{
+	padding:40px;
+	font-size: 15px;
+	margin-left:20px;
+	margin-top:15px;
+}
+
+.blue{
+	background-color: skyblue;
+}
+
