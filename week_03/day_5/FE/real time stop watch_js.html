@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title> REAL TIME STOP WATCH</title>
+		<style>
+			
+			.stopwatch{
+  				display:flex;
+  				font-size:45px;
+  				font-weight: bold;
+ 				 color: #333;
+  				background-color: #eee;
+  				text-align: center;
+  				margin-left:300px;
+  				margin-right:1340px;
+  				margin-top:200px;
+  
+			}
+			.display{
+				margin-left:300px;
+				margin-top:90px;
+				padding:30px 30px 30px 30px;
+				font-size:20px;
+			
+			}
+
+
+		
+		</style>
+	
+	</head>
+	<body>
+		<div class="stopwatch">
+  			<div id="minutes">00</div>:
+  			<div id="seconds">00</div>:
+ 			<div id="milliseconds">000</div>
+		</div>
+		<div class="display">
+			<button id="startButton">Start</button>
+			<button id="stopButton">Stop</button>
+			<button id="resetButton">Reset</button>
+		</div>
+	
+	</body>
+	
+	<script>
+	// get the stopwatch elements
+		let minutesElement = document.getElementById("minutes");
+		let secondsElement = document.getElementById("seconds");
+		let millisecondsElement = document.getElementById("milliseconds");
+
+	// initialize stopwatch variables
+		let minutes = 0;
+		let seconds = 0;
+		let milliseconds = 0;
+		let intervalId;
+
+	// update the stopwatch every millisecond
+		function updateStopwatch() {
+  		milliseconds++;
+  
+ 	 // update the seconds and reset milliseconds if necessary
+		 if (milliseconds === 1000) {
+    		 seconds++;
+    		 milliseconds = 0;
+  		 }
+  
+  	// update the minutes and reset seconds if necessary
+ 		 if (seconds === 60) {
+   		  minutes++;
+    		  seconds = 0;
+  		  }
+  
+  	// format the stopwatch display
+ 		 let displayMinutes = minutes < 10 ? "0" + minutes : minutes;
+  		 let displaySeconds = seconds < 10 ? "0" + seconds : seconds;
+  		 let displayMilliseconds = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+ 		 minutesElement.innerHTML = displayMinutes;
+ 		 secondsElement.innerHTML = displaySeconds;
+    		 millisecondsElement.innerHTML = displayMilliseconds;
+		}
+
+	// start the stopwatch
+		function startStopwatch() {
+  		intervalId = setInterval(updateStopwatch, 1); // 1 millisecond interval
+		}
+
+	// stop the stopwatch
+		function stopStopwatch() {
+  		clearInterval(intervalId);
+		}
+
+	// reset the stopwatch
+		function resetStopwatch() {
+  		minutes = 0;
+  		seconds = 0;
+		milliseconds = 0;
+		minutesElement.innerHTML = "00";
+		secondsElement.innerHTML = "00";
+		millisecondsElement.innerHTML = "000";
+		}
+
+		// add event listeners to buttons
+		let startButton = document.getElementById("startButton");
+		let stopButton = document.getElementById("stopButton");
+		let resetButton = document.getElementById("resetButton");
+		startButton.addEventListener("click", startStopwatch);
+		stopButton.addEventListener("click", stopStopwatch);
+		resetButton.addEventListener("click", resetStopwatch);
+
+	
+	
+	</script>
+
+
+
+</html>
+

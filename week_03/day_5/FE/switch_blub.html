@@ -1,0 +1,65 @@
+
+<html>
+
+<head>
+	<title> switch_blub_javascript </title>
+	<style>
+		.switch	{
+			margin-left:500px;
+			margin-top:500px;
+			padding:30px 30px 30px 30px ;
+			font-size:24px;
+			font-family:Monospace Text;
+		}
+		.offswitch{
+			padding:30px 30px 30px 30px ;
+			font-size:24px;
+			font-family:Copperplate;
+		
+		}
+		h1{
+			margin-left:550px;
+		}
+		
+		
+	</style>
+	
+</head>
+
+<body>
+	<p id="switch"></p>
+	<h1>switch ON and OFF the bulb </h1>
+
+	<button onclick="colorChange()" class="switch">ON</button>
+	<button onclick="color()" class="offswitch">OFF</button>
+
+	<script>
+		var b = document.getElementById("switch");
+		
+		
+		//style for the bulb
+				
+		function changeColor(color) {
+			document.body.style.background = color;
+		
+		}
+		function change(color1) {
+			document.body.style.background = color1;
+		}
+		
+		
+		
+		function colorChange() {
+			changeColor('#FFDD33');
+			
+		}
+		
+		function color() {
+			change('white');
+			
+		}	
+			
+	</script>
+</body>
+
+</html>
