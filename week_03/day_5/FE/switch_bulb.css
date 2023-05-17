@@ -1,0 +1,16 @@
+.name{
+	width:1835px;
+	height:950px;
+	border-radius:2px solid red ;
+	background-color:green;
+}
+#bulb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+#bulb.on {
+  background-color: yellow;
+}
+
