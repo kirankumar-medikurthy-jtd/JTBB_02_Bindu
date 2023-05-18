@@ -1,0 +1,44 @@
+.background{
+    width:1828px;
+    height:943px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding-top:20px;
+}
+
+.header{
+    background-color: #f483a5;
+    margin-top:90px;
+    width: 600px;
+    height: 500px;
+    margin-left:600px ;
+    padding:50px;
+    opacity:80%;
+    
+}
+.sign{
+    color:white;
+    margin-left:120px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:55px;
+    
+}
+input{
+    margin:auto;
+    font-size:28px;
+    font-family: cursive;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+}
+button{
+    margin-top:20px;
+    margin-left:250px;
+    font-size:28px;
+    border-radius: 10px;
+}
+.anchor{
+color: floralwhite;
+}
+.container{
+    padding-top:100px;
+}

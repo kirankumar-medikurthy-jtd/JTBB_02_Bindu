@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
+    width: 95%;
+}
+.main{
+    padding:80px;
+    width:400px; 
+    background:transparent;
+    margin-top:40px;
+    border-radius: 10px;
+    
+}
+.header{
+    background-image: linear-gradient(to left, #88b6dc 0%, #90d3c5 100%);
+    width: 600px;
+    height: 500px;
+    margin-left: 500px;
+    opacity:75%;
+}
+input{
+    padding:10px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.password{
+    margin-top:20px;
+    border-radius: 10px;
+    padding:5px;
+}
+.btn{
+    margin-top:20px;
+    border-radius: 10px;
+    color:grey;
+    font-size:20px;
+    background-color:white;
+    cursor: pointer;
+    width:80px;
+}
+.account{
+    color: rgba(46, 10, 207, 0.926);
+    margin-top:120px;
+    margin-left:20px;
+    font-size:22px;
+    text-decoration: none;
+}
+a{
+    color: rgba(54, 17, 202, 0.926);
+    margin-left:250px;
+    margin-top:120px;
+    font-size:22px;
+    text-decoration: none;
+}
+
+.container{
+    padding-top:100px;
+}
+.admincode{
+    margin-top:20px;
+}
