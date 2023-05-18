@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel ="stylesheet" href="stop_watch.css">
+</head>
+<body>
+    <div class="layout">
+        <h1>Timer</h1> 
+        <div id="timer">00:00:00:00</div>        
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <button id="stop">stop</button>
+    </div>
+
+</body>
+<script>
+
+    var timer = document.querySelector("#timer");
+    var startbuttton = document.querySelector("#start");
+    var stopbuttton = document.querySelector("#stop");
+    var resetbuttton = document.querySelector("#reset");
+
+    var milliseconds = 0;
+    var seconds = 0;
+    var minutes = 0;
+    var hours = 0;
+    var time;
+    
+    function startTimer(){
+        //console.log("time")
+        time=setInterval(function(){
+            milliseconds++;
+            if(milliseconds==60) {
+                milliseconds=0;
+                seconds++;
+                                    
+                if(seconds==60) {
+                seconds=0;
+                minutes++;
+
+                if(minutes==60){
+                minutes=0;
+                hours++;
+                }
+            }
+        }
+        
+        timer.innerHTML = timing(hours)+":"+timing(minutes)+":"+timing(seconds)+":"+timing(milliseconds);
+        }, 100);
+    }
+    
+    function stopTimer(){
+        clearInterval(time);
+        //console.log("time")
+    }
+    function resetTimer(){
+        clearInterval(time);
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
+
+        timer.innerHTML = "00:00:00:00";
+    }
+    function timing(integer){
+        var string = integer + "";
+        if(string<10){
+            return "0"+string;
+        }
+        else
+        {
+            return string;
+        }
+    }
+    startbuttton.addEventListener('click',startTimer);
+    stopbuttton.addEventListener('click',stopTimer);
+    resetbuttton.addEventListener('click',resetTimer);
+</script>
+</html>
